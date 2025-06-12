@@ -9,6 +9,7 @@ const validateObjectId = require('../middleware/validateObjectId')
 
 // Send all genres
 router.get('/', asyncHandler(async (req, res) => {
+    console.log(req.query)
     const genres = await Genre.find().sort('name');
     res.send(genres);
 }))

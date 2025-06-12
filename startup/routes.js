@@ -16,7 +16,7 @@ module.exports = function (app){
     app.use('/api/movies', movies)
     app.use('/api/rentals', rentals)
     app.use('/api/users', users)
-    app.use('/api/rentals', rentals)
+    app.use('/api/returns', returns)
     app.use('/api/auth', auth)
     app.use(error)
 }
